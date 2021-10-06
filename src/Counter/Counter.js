@@ -2,6 +2,9 @@ import React from "react";
 
 
 class Counter extends React.Component {
+    static defaultProps = {
+        initialValue: 0,
+    };
     state = {
         value: this.props.initialValue,
     }
