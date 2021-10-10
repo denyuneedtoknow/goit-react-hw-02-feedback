@@ -13,6 +13,7 @@ class App extends React.Component {
   };
 
   btnHandler = (e) => {
+    e.preventDefault();
     const name = e.target.name;
     this.setState((prevState) => ({
       [name]: prevState[name] + 1,
