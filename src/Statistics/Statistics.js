@@ -1,3 +1,4 @@
+import s from "./Statistics.module.css"
 export default function Statistics({
   good,
   neutral,
@@ -7,11 +8,23 @@ export default function Statistics({
 }) {
   return (
     <>
-      <p>{good}</p>
-      <p>{neutral}</p>
-      <p>{bad}</p>
-      <p>{total}</p>
-      <p>{percentsApproving}%</p>
+      <div className={s.gradeThumb}>
+        <p className={s.gradeDescription}>Great!</p>
+        <p className={s.grades}>{good}</p>
+      </div>
+      <div className={s.gradeThumb}>
+        <p className={s.gradeDescription}>Meh...</p>
+        <p className={s.grades}>{neutral}</p>
+      </div >
+      <div className={s.gradeThumb}>
+        <p className={s.gradeDescription}>Bad :(</p>
+        <p className={s.grades}>{bad}</p>
+      </div >
+      <div className={s.gradeThumb}>
+        <p className={s.gradeDescription}>Reviews</p>
+        <p className={s.grades}>{total}</p>
+      </div >
+      <div className={s.gradeThumb}><p className={s.gradeDescription} >Reviwers approved</p><p className={s.grades}>{percentsApproving}%</p></div >
     </>
   );
 }

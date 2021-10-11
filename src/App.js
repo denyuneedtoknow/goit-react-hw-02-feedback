@@ -29,9 +29,9 @@ class App extends React.Component {
   };
   render() {
     return (
-      <div>
+      <div className="app">
         <Section
-          title={"feedback"}
+          title={"Give us your feedback"}
           children={
             <FeedbackOptions
               options={Object.keys(this.state)}
@@ -41,7 +41,7 @@ class App extends React.Component {
         ></Section>
         {this.totalFeedbacks() > 0 ? (
           <Section
-            title={"Stats"}
+            title={"Our Statistics"}
             children={
               <Statistics
                 good={this.state.good}
@@ -53,7 +53,7 @@ class App extends React.Component {
             }
           ></Section>
         ) : (
-          <Notification message={"No data collected yet"}></Notification>
+          <Notification message={"Rate Us!"}></Notification>
         )}
       </div>
     );

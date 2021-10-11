@@ -1,0 +1,28 @@
+.btnThumb {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  height: 20px;
+  width: auto;
+  border: 1px solid yellow;
+  border-radius: 2px;
+  background-color: yellow;
+  color: red;
+  box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6);
+}
+.btn:nth-child(2) {
+  border: 1px solid rgb(251, 247, 255);
+  background-color: rgb(251, 247, 255);
+  color: black;
+}
+.btn:nth-child(3) {
+  border: 1px solid chocolate;
+  background-color: chocolate;
+  color: aliceblue;
+}

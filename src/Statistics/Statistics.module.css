@@ -1,0 +1,28 @@
+.gradeThumb {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid lightblue;
+}
+
+.grades {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: 50px;
+  width: 50px;
+  height: auto;
+  padding: 5px;
+  border-radius: 15px;
+  border: 1px solid grey;
+  background-color: rgb(0, 16, 241);
+  color: white;
+  box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6);
+}
+
+.gradeDescription {
+  color: blue;
+  margin-left: 50px;
+  font-style: italic;
+  font-weight: 500;
+}

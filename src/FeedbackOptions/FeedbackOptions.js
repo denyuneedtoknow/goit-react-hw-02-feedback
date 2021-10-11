@@ -1,8 +1,10 @@
+import s from "./FeedbackOptions.module.css"
+
 function FeedbackOptions({ options, click }) {
   return (
-    <div>
+    <div className={s.btnThumb}>
       {options.map((option, index) => (
-        <button key={index} type="button" name={option} onClick={click}>
+        <button className={s.btn} key={index} type="button" name={option} onClick={click}>
           {option}
         </button>
       ))}
